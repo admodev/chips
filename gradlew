@@ -89,6 +89,13 @@ APP_HOME=$( cd "${APP_HOME:-./}" > /dev/null && pwd -P ) || exit
 # Use the maximum available, or set MAX_FD != -1 to use that value.
 MAX_FD=maximum
 
+# Windows chips jar generation
+task chipsJar(type: Jar) {
+    archiveBaseName = "chips"
+    from(project(":app").sourceSets.main.output)
+    dependsOn ":app:classes"
+}
+
 warn () {
     echo "$*"
 } >&2

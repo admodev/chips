@@ -2,8 +2,8 @@
 ECHO OFF
 jpackage ^
   --name chips ^
-  --input build ^
-  --main-jar chips.jar ^
+  --input app/build/libs ^
+  --main-jar app.jar ^
   --type app-image ^
   --icon jpackage/icon.png ^
   --app-version 1.0.0 ^
