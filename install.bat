@@ -7,6 +7,5 @@ jpackage ^
   --type app-image ^
   --icon jpackage/icon.png ^
   --app-version 1.0.0 ^
-  --license-file jpackage/license.txt ^
   --dest dist
 PAUSE
