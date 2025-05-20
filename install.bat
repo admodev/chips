@@ -5,7 +5,6 @@ jpackage ^
   --input build/ ^
   --main-jar chips.jar ^
   --type exe ^
-  --icon jpackage/icon.png ^
   --app-version 1.0.0 ^
   --license-file jpackage/license.txt ^
   --dest dist/
