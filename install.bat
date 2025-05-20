@@ -2,10 +2,11 @@
 ECHO OFF
 jpackage ^
   --name chips ^
-  --input build/ ^
+  --input build ^
   --main-jar chips.jar ^
-  --type exe ^
+  --type app-image ^
+  --icon jpackage/icon.png ^
   --app-version 1.0.0 ^
   --license-file jpackage/license.txt ^
-  --dest dist/
+  --dest dist
 PAUSE
